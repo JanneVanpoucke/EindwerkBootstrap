@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Organie shoppingcart</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand pl-lg-5 text-uppercase" href="index.html"><span class="logoLettertype">O</span>rganie</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                <li class="nav-item px-3 active">
+                    <a class="nav-link text-uppercase hvr-ripple-in" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link text-uppercase hvr-ripple-in" href="About.html">About</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link text-uppercase hvr-ripple-in" href="Shop.html">Shop</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link text-uppercase hvr-ripple-in" href="Blog.html">Blog</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link text-uppercase hvr-ripple-in" href="Contact.html">Contact</a>
+                </li>
+                <div class="d-flex nav-item  px-3">
+                    <li class="pr-3">
+                        <a class="nav-link winkelkarretje hvr-ripple-in" href="Shoppingcart.html">
+                            <ion-icon name="cart"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="pl-3">
+                        <a class="nav-link user hvr-ripple-in" href="Account.html">
+                            <ion-icon name="person"></ion-icon>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+            <form class="card card-sm">
+                <div class="card-body row no-gutters align-items-center p-0">
+                    <div class="col-auto"></div>
+                    <div class="col">
+                        <input class="form-control form-control-lg form-control-borderless" type="search"
+                               placeholder="Search">
+                    </div>
+                    <!--end of col-->
+                    <div class="col-auto">
+                        <button class="btn btn-lg " type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                    <!--end of col-->
+                </div>
+            </form>
+        </div>
+    </nav>
+    <section class="container-fluid p-0">
+        <h3 class="d-none">Shoppingcart Banner</h3>
+        <article class="row bgShop ptpb-7 mb-5">
+            <h4 class="d-none">Shoppingcart inhoud Banner</h4>
+            <div class="col-xl-2 offset-xl-5">
+                <h2 class="titleSectionOneShop text-uppercase text-center">shopping cart</h2>
+                <div class="d-flex justify-content-center">
+                    <p class="paragraphSectionOneShop text-center">Home <span class="text-forestgreen">/Shop Grid</span>
+                    </p>
+                </div>
+            </div>
+        </article>
+    </section>
+</header>
+<main>
+    <section class="container-fluid p-0">
+        <h3 class="d-none">Shoppingcart</h3>
+        <article class="row">
+            <h4 class="d-none">Shoppingcart Inhoud</h4>
+            <div class="col-10 offset-1 col-xl-8 offset-xl-2">
+                <div class="table-responsive d-none d-lg-block">
+                    <table class="table">
+                        <thead class="thead-light">
+                        <tr>
+                            <th scope="col" class="catLittleTitle text-uppercase">Products</th>
+                            <th scope="col" class="catLittleTitle text-uppercase"></th>
+                            <th scope="col" class="catLittleTitle text-uppercase">Categories</th>
+                            <th scope="col" class="catLittleTitle text-uppercase">Price</th>
+                            <th scope="col" class="catLittleTitle text-uppercase">Quantity</th>
+                            <th scope="col" class="catLittleTitle text-uppercase">Total</th>
+                            <th scope="col" class="catLittleTitle text-uppercase"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="product">
+                            <th scope="row" class="align-items-center">
+                                <img src="images/granaatappel.png" class="img-fluid" width="200" height="200" alt="">
+                            </th>
+                            <td class="align-middle littleTitle">Pomgranate</td>
+                            <td class="align-middle text-secondary">Fruit</td>
+                            <td class="align-middle tinyTitle text-secondary product-price">6,00</td>
+                            <td class="align-middle catLittleTitle product-quantity"><input type="number" value="1"
+                                                                                            min="1"></td>
+                            <td class="align-middle price text-secondary product-line-price">6,00</td>
+                            <td class="align-middle text-center product-removal">
+                                <button class="remove-product">
+                                    <ion-icon name="close"></ion-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="product">
+                            <th scope="row" class="align-items-center">
+                                <img src="images/brocolli2.png" class="img-fluid" width="200" height="200" alt="">
+                            </th>
+                            <td class="align-middle littleTitle">Brocolli</td>
+                            <td class="align-middle text-secondary">Vegetable</td>
+                            <td class="align-middle tinyTitle text-secondary product-price">2,00</td>
+                            <td class="align-middle catLittleTitle product-quantity"><input type="number" value="1"
+                                                                                            min="1"></td>
+                            <td class="align-middle price text-secondary product-line-price">2,00</td>
+                            <td class="align-middle text-center product-removal">
+                                <button class="remove-product">
+                                    <ion-icon name="close"></ion-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="product">
+                            <th scope="row" class="align-items-center">
+                                <img src="images/citroen.png" class="img-fluid" width="200" height="200" alt="">
+                            </th>
+                            <td class="align-middle littleTitle">Lemon</td>
+                            <td class="align-middle text-secondary">Fruit</td>
+                            <td class="align-middle tinyTitle text-secondary product-price">3,00</td>
+                            <td class="align-middle catLittleTitle product-quantity"><input type="number" value="1"
+                                                                                            min="1"></td>
+                            <td class="align-middle price text-secondary product-line-price">3,00</td>
+                            <td class="align-middle text-center product-removal">
+                                <button class="remove-product">
+                                    <ion-icon name="close"></ion-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row d-lg-none">
+                    <div class="col-12">
+                        <div class="product text-center">
+                            <div class="text-center mb-2">
+                                <img src="images/granaatappel.png" class="img-fluid" width="200"
+                                     height="200" alt="organie pomgranate">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <h2 class="littleTitle5 m-0 pr-1">Pomgranate</h2>
+                                    <span class="text-secondary">&#8226;</span>
+                                    <p class="text-secondary m-0 pl-1">Fruit</p>
+                                </div>
+                            </div>
+                            <p class="m-0 text-secondary"><span class="font-weight-bold text-forestgreen">U</span>nit
+                                price:</p>
+                            <p class="m-0 mt-2 tinyTitle text-secondary product-price">6,00</p>
+                            <p class="m-0 mt-2 text-secondary"><span class="font-weight-bold text-forestgreen">Q</span>uantity:
+                            </p>
+                            <div class="catLittleTitle product-quantity"><input type="number" value="1" min="1"></div>
+                            <p class="mt-2 m-0 text-forestgreen font-weight-bold">Total:</p>
+                            <div class="mt-2 price text-secondary product-line-price">6,00</div>
+                            <div class="text-center product-removal mt-3">
+                                <button class="remove-product">
+                                    <ion-icon name="close"></ion-icon>
+                                </button>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="product text-center">
+                            <div class="text-center mb-2">
+                                <img src="images/brocolli2.png" class="img-fluid" width="200" height="200"
+                                     alt="organie broccoli">
+                                <div class="mt-3 d-flex justify-content-center align-items-center">
+                                    <h2 class="littleTitle5 m-0 pr-1">Broccoli</h2>
+                                    <span class="text-secondary">&#8226;</span>
+                                    <p class="text-secondary m-0 pl-1">Vegetable</p>
+                                </div>
+                            </div>
+                            <p class="m-0 text-secondary"><span class="font-weight-bold text-forestgreen">U</span>nit
+                                price:</p>
+                            <p class="m-0 mt-2 tinyTitle text-secondary product-price">2,00</p>
+                            <p class="m-0 mt-2 text-secondary"><span class="font-weight-bold text-forestgreen">Q</span>uantity:
+                            </p>
+                            <div class="catLittleTitle product-quantity"><input type="number" value="1" min="1"></div>
+                            <p class="mt-2 m-0 text-forestgreen font-weight-bold">Total:</p>
+                            <div class="mt-2 price text-secondary product-line-price">2,00</div>
+                            <div class="text-center product-removal mt-3">
+                                <button class="remove-product">
+                                    <ion-icon name="close"></ion-icon>
+                                </button>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="product text-center">
+                            <div class="text-center mb-2">
+                                <img src="images/citroen.png" class="img-fluid" width="200" height="200"
+                                     alt="organie lemon">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <h2 class="littleTitle5 m-0 pr-1">Lemon</h2>
+                                    <span class="text-secondary">&#8226;</span>
+                                    <p class="text-secondary m-0 pl-1">Fruit</p>
+                                </div>
+                            </div>
+                            <p class="m-0 text-secondary"><span class="font-weight-bold text-forestgreen">U</span>nit
+                                price:</p>
+                            <p class="m-0 mt-2 tinyTitle text-secondary product-price">3,00</p>
+                            <p class="m-0 mt-2 text-secondary"><span class="font-weight-bold text-forestgreen">Q</span>uantity:
+                            </p>
+                            <div class="catLittleTitle product-quantity"><input type="number" value="1" min="1"></div>
+                            <p class="mt-2 m-0 text-forestgreen font-weight-bold">Total:</p>
+                            <div class="mt-2 price text-secondary product-line-price">3,00</div>
+                            <div class="text-center product-removal mt-3 mb-3">
+                                <button class="remove-product">
+                                    <ion-icon name="close"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-4 pb-4 border-top border-bottom">
+                    <div class="col-sm-6 order-2 order-sm-1 mt-3 mb-3 p-0">
+                        <div class="d-flex align-items-center">
+                            <a href="All.html" role="button"
+                               class="text-uppercase text-center fullGreenBtn p-2 text-decoration-none">continue
+                                shopping</a>
+                            <button class="clearBtn text-uppercase cart-removal">
+                                <ion-icon name="close" class=""></ion-icon>
+                                <span class="m-0">clear shopping cart</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 order-1 order-sm-2 mt-3 mb-3">
+                        <div class="d-flex justify-content-sm-end align-items-center">
+                            <label class="m-0 pr-1 catLittleTitle">Subtotal: </label>
+                            <div class="totals-value paragraphtwobold text-forestgreen" id="cart-subtotal">71.97</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 mb-5">
+                    <div class="col-sm-6">
+                        <p>Enter your code if you have one. Sed id lorem a felis tis tristique. Mauris ac auctor nibh.
+                            Cras venenatis neque eget pellentesque posuere.</p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control reviewbox rounded mr-2"
+                                   placeholder="Enter your coupon code" aria-label="coupbon code">
+                            <div class="input-group-append">
+                                <button type="submit" class="button catLittleTitle noborder rounded text-uppercase">
+                                    Apply code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex justify-content-sm-end">
+                            <a href="Checkout.html" role="button"
+                               class="text-uppercase fullGreenBtn p-3 text-decoration-none">order now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="container-fluid p-0 border-top">
+        <h3 class="d-none">Carousel</h3>
+        <article class="row mt-5">
+            <h4 class="d-none">Inhoud Carousel</h4>
+            <div class="col-sm-8 offset-sm-2">
+                <h2 class="littleTitle mb-3">Related Products</h2>
+                <div id="carouselExampleControls" class="carousel slide d-none d-lg-block" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card-deck row">
+                                <div class="col-12 col-lg-3 card noborder pt-4 pl-3 pr-3 pb-2">
+                                    <img src="images/MangoJuice.png" class="card-img-top img-fluid image productImage"
+                                         alt="Mango">
+                                    <div class="showMe text-forestgreen">
+                                        <a href="productdetail.html">
+                                            <ion-icon name="search" class="icon p-2 mr-1"></ion-icon>
+                                        </a>
+                                        <a href="Shoppingcart.html">
+                                            <ion-icon name="cart" class="icon p-2"></ion-icon>
+                                        </a>
+                                        <ion-icon name="heart" class="icon p-2 ml-1"></ion-icon>
+                                    </div>
+                                    <div class="card-body p-0 text-center image">
+                                        <h2 class="card-title littleTitle mt-3">Mango Juice</h2>
+                                        <img src="images/streepje.png" alt="streepje" class="img-fluid">
+                                        <p class="card-text pb-4"><small class="text-muted">€6,00</small></p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 card noborder pt-4 pl-3 pr-3 pb-2">
+                                    <img src="images/brocolli2.png" class="card-img-top img-fluid image productImage"
+                                         alt="brocolli2">
+                                    <div class="showMe text-forestgreen">
+                                        <a href="productdetail.html">
+                                            <ion-icon name="search" class="icon p-2 mr-1"></ion-icon>
+                                        </a>
+                                        <a href="Shoppingcart.html">
+                                            <ion-icon name="cart" class="icon p-2"></ion-icon>
+                                        </a>
+                                        <ion-icon name="heart" class="icon p-2 ml-1"></ion-icon>
+                                    </div>
+                                    <div class="card-body p-0 text-center image">
+                                        <h2 class="card-title littleTitle mt-3">Broccoli</h2>
+                                        <img src="images/streepje.png" alt="streepje" class="img-fluid">
+                                        <p class="card-text pb-4"><small class="text-muted">€2,00</small></p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 card noborder pt-4 pl-3 pr-3 pb-2">
+                                    <img src="images/kersen.png" class="card-img-top img-fluid image productImage"
+                                         alt="kersen">
+                                    <div class="showMe text-forestgreen">
+                                        <a href="productdetail.html">
+                                            <ion-icon name="search" class="icon p-2 mr-1"></ion-icon>
+                                        </a>
+                                        <a href="Shoppingcart.html">
+                                            <ion-icon name="cart" class="icon p-2"></ion-icon>
+                                        </a>
+                                        <ion-icon name="heart" class="icon p-2 ml-1"></ion-icon>
+                                    </div>
+                                    <div class="card-body p-0 text-center image">
+                                        <h2 class="card-title littleTitle mt-3">Cherries</h2>
+                                        <img src="images/streepje.png" alt="streepje" class="img-fluid">
+                                        <p class="card-text pb-4"><small class="text-muted">€3,00</small></p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 card noborder pt-4 pl-3 pr-3 pb-2">
+                                    <img src="images/wallnuts.png" class="card-img-top img-fluid image" alt="wallnut">
+                                    <div class="showMe text-forestgreen">
+                                        <a href="productdetail.html">
+                                            <ion-icon name="search" class="icon p-2 mr-1"></ion-icon>
+                                        </a>
+                                        <a href="Shoppingcart.html">
+                                            <ion-icon name="cart" class="icon p-2"></ion-icon>
+                                        </a>
+                                        <ion-icon name="heart" class="icon p-2 ml-1"></ion-icon>
+                                    </div>
+                                    <div class="card-body p-0 text-center image">
+                                        <h2 class="card-title littleTitle mt-3">Wallnuts</h2>
+                                        <img src="images/streepje.png" alt="streepje" class="img-fluid">
+                                        <p class="card-text pb-4"><small class="text-muted">€10,00</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-deck row">
+                                <div class="col-12 col-lg-4 card noborder pt-4 pl-3 pr-3 pb-2">
+                                    <img src="images/shopall/rose-3246277_1920.png" class="card-img-top img-fluid image"
+                                         alt="roos">
+                                    <div class="showMe text-forestgreen">
+                                        <a href="productdetail.html">
+                                            <ion-icon name="search" class="icon p-2 mr-1"></ion-icon>
+                                        </a>
+                                        <a href="Shoppingcart.html">
+                                            <ion-icon name="cart" class="icon p-2"></ion-icon>
+                                        </a>
+                                        <ion-icon name="heart" class="icon p-2 ml-1"></ion-icon>
+                                    </div>
+                                    <div class="card-body p-0 text-center image">
+                                        <h2 class="card-title littleTitle mt-3">Rose</h2>
+                                        <img src="images/streepje.png" alt="streepje" class="img-fluid">
+                                        <p class="card-text pb-4"><small class="text-muted">€10,00</small></p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-4 card noborder pt-4 pl-3 pr-3 pb-2">
+                                    <img src="images/banana.png" class="card-img-top img-fluid image" alt="Banana">
+                                    <div class="showMe text-forestgreen">
+                                        <a href="productdetail.html">
+                                            <ion-icon name="search" class="icon p-2 mr-1"></ion-icon>
+                                        </a>
+                                        <a href="Shoppingcart.html">
+                                            <ion-icon name="cart" class="icon p-2"></ion-icon>
+                                        </a>
+                                        <ion-icon name="heart" class="icon p-2 ml-1"></ion-icon>
+                                    </div>
+                                    <div class="card-body p-0 text-center image">
+                                        <h2 class="card-title littleTitle mt-3">Banana</h2>
+                                        <img src="images/streepje.png" alt="streepje" class="img-fluid">
+                                        <p class="card-text pb-4"><small class="text-muted">€2,00</small></p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 card noborder pt-4 pl-3 pr-3 pb-2">
+                                    <img src="images/shopall/carrots-2144401_1920.png"
+                                         class="card-img-top img-fluid image" alt="wortel">
+                                    <div class="showMe text-forestgreen">
+                                        <a href="productdetail.html">
+                                            <ion-icon name="search" class="icon p-2 mr-1"></ion-icon>
+                                        </a>
+                                        <a href="Shoppingcart.html">
+                                            <ion-icon name="cart" class="icon p-2"></ion-icon>
+                                        </a>
+                                        <ion-icon name="heart" class="icon p-2 ml-1"></ion-icon>
+                                    </div>
+                                    <div class="card-body p-0 text-center image">
+                                        <h2 class="card-title littleTitle mt-3">Carrot</h2>
+                                        <img src="images/streepje.png" alt="streepje" class="img-fluid">
+                                        <p class="card-text pb-4"><small class="text-muted">€3,00</small></p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-4 card noborder pt-4 pl-3 pr-3 pb-2">
+                                    <img src="images/peas.png" class="card-img-top img-fluid image" alt="greenPeas">
+                                    <div class="showMe text-forestgreen">
+                                        <a href="productdetail.html">
+                                            <ion-icon name="search" class="icon p-2 mr-1"></ion-icon>
+                                        </a>
+                                        <a href="Shoppingcart.html">
+                                            <ion-icon name="cart" class="icon p-2"></ion-icon>
+                                        </a>
+                                        <ion-icon name="heart" class="icon p-2 ml-1"></ion-icon>
+                                    </div>
+                                    <div class="card-body p-0 text-center image">
+                                        <h2 class="card-title littleTitle mt-3">Green Peas</h2>
+                                        <img src="images/streepje.png" alt="streepje" class="img-fluid">
+                                        <p class="card-text pb-4"><small class="text-muted">€4,00</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div id="carouselExampleControls2" class="carousel slide d-block d-lg-none" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card-deck row">
+                                <div class="col-12 card noborder pt-4 pl-3 pr-3 pb-2">
+                                    <img src="images/MangoJuice.png" class="card-img-top img-fluid image productImage"
+                                         alt="Mango">
+                                    <div class="showMe text-forestgreen">
+                                        <a href="productdetail.html">
+                                            <ion-icon name="search" class="icon p-2 mr-1"></ion-icon>
+                                        </a>
+                                        <a href="Shoppingcart.html">
+                                            <ion-icon name="cart" class="icon p-2"></ion-icon>
+                                        </a>
+                                        <ion-icon name="heart" class="icon p-2 ml-1"></ion-icon>
+                                    </div>
+                                    <div class="card-body p-0 text-center image">
+                                        <h2 class="card-title littleTitle mt-3">Mango Juice</h2>
+                                        <img src="images/streepje.png" alt="streepje" class="img-fluid">
+                                        <p class="card-text pb-4"><small class="text-muted">€6,00</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-deck row">
+                                <div class="col-12 card noborder pt-4 pl-3 pr-3 pb-2">
+                                    <img src="images/brocolli2.png" class="card-img-top img-fluid image productImage"
+                                         alt="brocolli2">
+                                    <div class="showMe text-forestgreen">
+                                        <a href="productdetail.html">
+                                            <ion-icon name="search" class="icon p-2 mr-1"></ion-icon>
+                                        </a>
+                                        <a href="Shoppingcart.html">
+                                            <ion-icon name="cart" class="icon p-2"></ion-icon>
+                                        </a>
+                                        <ion-icon name="heart" class="icon p-2 ml-1"></ion-icon>
+                                    </div>
+                                    <div class="card-body p-0 text-center image">
+                                        <h2 class="card-title littleTitle mt-3">Broccoli</h2>
+                                        <img src="images/streepje.png" alt="streepje" class="img-fluid">
+                                        <p class="card-text pb-4"><small class="text-muted">€2,00</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-deck row">
+                                <div class="col-12 col-lg-3 card noborder pt-4 pl-3 pr-3 pb-2">
+                                    <img src="images/kersen.png" class="card-img-top img-fluid image productImage"
+                                         alt="kersen">
+                                    <div class="showMe text-forestgreen">
+                                        <a href="productdetail.html">
+                                            <ion-icon name="search" class="icon p-2 mr-1"></ion-icon>
+                                        </a>
+                                        <a href="Shoppingcart.html">
+                                            <ion-icon name="cart" class="icon p-2"></ion-icon>
+                                        </a>
+                                        <ion-icon name="heart" class="icon p-2 ml-1"></ion-icon>
+                                    </div>
+                                    <div class="card-body p-0 text-center image">
+                                        <h2 class="card-title littleTitle mt-3">Cherries</h2>
+                                        <img src="images/streepje.png" alt="streepje" class="img-fluid">
+                                        <p class="card-text pb-4"><small class="text-muted">€3,00</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-deck row">
+                                <div class="col-12 col-lg-3 card noborder pt-4 pl-3 pr-3 pb-2">
+                                    <img src="images/wallnuts.png" class="card-img-top img-fluid image" alt="wallnut">
+                                    <div class="showMe text-forestgreen">
+                                        <a href="productdetail.html">
+                                            <ion-icon name="search" class="icon p-2 mr-1"></ion-icon>
+                                        </a>
+                                        <a href="Shoppingcart.html">
+                                            <ion-icon name="cart" class="icon p-2"></ion-icon>
+                                        </a>
+                                        <ion-icon name="heart" class="icon p-2 ml-1"></ion-icon>
+                                    </div>
+                                    <div class="card-body p-0 text-center image">
+                                        <h2 class="card-title littleTitle mt-3">Wallnuts</h2>
+                                        <img src="images/streepje.png" alt="streepje" class="img-fluid">
+                                        <p class="card-text pb-4"><small class="text-muted">€10,00</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-deck row">
+                                <div class="col-12 col-lg-4 card noborder pt-4 pl-3 pr-3 pb-2">
+                                    <img src="images/shopall/rose-3246277_1920.png" class="card-img-top img-fluid image"
+                                         alt="roos">
+                                    <div class="showMe text-forestgreen">
+                                        <a href="productdetail.html">
+                                            <ion-icon name="search" class="icon p-2 mr-1"></ion-icon>
+                                        </a>
+                                        <a href="Shoppingcart.html">
+                                            <ion-icon name="cart" class="icon p-2"></ion-icon>
+                                        </a>
+                                        <ion-icon name="heart" class="icon p-2 ml-1"></ion-icon>
+                                    </div>
+                                    <div class="card-body p-0 text-center image">
+                                        <h2 class="card-title littleTitle mt-3">Rose</h2>
+                                        <img src="images/streepje.png" alt="streepje" class="img-fluid">
+                                        <p class="card-text pb-4"><small class="text-muted">€10,00</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-deck row">
+                                <div class="col-12 col-lg-4 card noborder pt-4 pl-3 pr-3 pb-2">
+                                    <img src="images/banana.png" class="card-img-top img-fluid image" alt="Banana">
+                                    <div class="showMe text-forestgreen">
+                                        <a href="productdetail.html">
+                                            <ion-icon name="search" class="icon p-2 mr-1"></ion-icon>
+                                        </a>
+                                        <a href="Shoppingcart.html">
+                                            <ion-icon name="cart" class="icon p-2"></ion-icon>
+                                        </a>
+                                        <ion-icon name="heart" class="icon p-2 ml-1"></ion-icon>
+                                    </div>
+                                    <div class="card-body p-0 text-center image">
+                                        <h2 class="card-title littleTitle mt-3">Banana</h2>
+                                        <img src="images/streepje.png" alt="streepje" class="img-fluid">
+                                        <p class="card-text pb-4"><small class="text-muted">€2,00</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-deck row">
+                                <div class="col-12 col-lg-4 card noborder pt-4 pl-3 pr-3 pb-2">
+                                    <img src="images/shopall/carrots-2144401_1920.png"
+                                         class="card-img-top img-fluid image" alt="wortel">
+                                    <div class="showMe text-forestgreen">
+                                        <a href="productdetail.html">
+                                            <ion-icon name="search" class="icon p-2 mr-1"></ion-icon>
+                                        </a>
+                                        <a href="Shoppingcart.html">
+                                            <ion-icon name="cart" class="icon p-2"></ion-icon>
+                                        </a>
+                                        <ion-icon name="heart" class="icon p-2 ml-1"></ion-icon>
+                                    </div>
+                                    <div class="card-body p-0 text-center image">
+                                        <h2 class="card-title littleTitle mt-3">Carrot</h2>
+                                        <img src="images/streepje.png" alt="streepje" class="img-fluid">
+                                        <p class="card-text pb-4"><small class="text-muted">€3,00</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-deck row">
+                                <div class="col-12 col-lg-4 card noborder pt-4 pl-3 pr-3 pb-2">
+                                    <img src="images/peas.png" class="card-img-top img-fluid image" alt="greenPeas">
+                                    <div class="showMe text-forestgreen">
+                                        <a href="productdetail.html">
+                                            <ion-icon name="search" class="icon p-2 mr-1"></ion-icon>
+                                        </a>
+                                        <a href="Shoppingcart.html">
+                                            <ion-icon name="cart" class="icon p-2"></ion-icon>
+                                        </a>
+                                        <ion-icon name="heart" class="icon p-2 ml-1"></ion-icon>
+                                    </div>
+                                    <div class="card-body p-0 text-center image">
+                                        <h2 class="card-title littleTitle mt-3">Green Peas</h2>
+                                        <img src="images/streepje.png" alt="streepje" class="img-fluid">
+                                        <p class="card-text pb-4"><small class="text-muted">€4,00</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="container-fluid p-0">
+        <h3 class="d-none">Nieuwsbrief</h3>
+        <article class="row bgSectionSeven ptpb-8">
+            <h4 class="d-none">Nieuwsbrief inhoud</h4>
+            <div class="col-10 offset-1 col-md-8 offset-md-2">
+                <div class="d-block d-lg-flex align-items-center">
+                    <h2 class="titleSectionSeven mr-lg-2">Subscribe To Our Newsletter</h2>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control rounded mr-2" placeholder="Enter your email"
+                               aria-label="emailaddress">
+                        <div class="input-group-append">
+                            <button class="rounded-pill fullGreenBtn2 pl-lg-4 pr-lg-4 pl-2 pr-2" type="button">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </section>
+</main>
+<footer>
+    <section class="container-fluid p-0">
+        <h3 class="d-none">Footer informatie</h3>
+        <article class="row p-6">
+            <h4 class="d-none">footerdetailinfo</h4>
+            <div class="col-10 offset-1 col-xl-8 offset-xl-2">
+                <div class="row border-bottom text-dark">
+                    <div class="col-md-4 p-0">
+                        <h2 class="mb-4 littleTitle5">Contact</h2>
+                        <div class="d-flex">
+                            <ion-icon name="home" class="pr-2 mt-1"></ion-icon>
+                            <p>2/45 Tower Street, New York,USA </p>
+                        </div>
+                        <div class="d-flex">
+                            <ion-icon name="call" class="pr-2 mt-1"></ion-icon>
+                            <p>0012 678 8899</p>
+                        </div>
+                        <a href="" class="text-decoration-none text-dark">
+                            <div class="d-flex link">
+                                <ion-icon name="mail" class="pr-2 mt-1"></ion-icon>
+                                <p>contact@organie.com</p>
+                            </div>
+                        </a>
+                        <a href="" class="text-decoration-none text-dark">
+                            <div class="d-flex link">
+                                <ion-icon name="globe" class="pr-2 mt-1"></ion-icon>
+                                <p>www.organiestore.com</p>
+                            </div>
+                        </a>
+                        <div class="d-flex">
+                            <div class="justify-content-around">
+                                <a href="" class="text-decoration-none text-dark">
+                                    <ion-icon name="logo-facebook" class="icon p-2"></ion-icon>
+                                </a>
+                                <a href="" class="text-decoration-none text-dark">
+                                    <ion-icon name="logo-twitter" class="icon p-2"></ion-icon>
+                                </a>
+                                <a href="" class="text-decoration-none text-dark">
+                                    <ion-icon name="logo-youtube" class="icon p-2"></ion-icon>
+                                </a>
+                                <a href="" class="text-decoration-none text-dark">
+                                    <ion-icon name="logo-vimeo" class="icon p-2"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 p-0">
+                        <div class="d-flex">
+                            <div class="mr-4">
+                                <h2 class="mb-4 littleTitle5">Information</h2>
+                                <a href="" class="text-decoration-none text-dark"><p class="link">New Products</p></a>
+                                <a href="" class="text-decoration-none text-dark"><p class="link">- Top Sellers</p></a>
+                                <a href="" class="text-decoration-none text-dark"><p class="link">Our Blog</p></a>
+                                <a href="" class="text-decoration-none text-dark"><p class="link">About Our Shop</p></a>
+                                <p>BE 0123.456.789</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 p-0">
+                        <div class="ml-md-4">
+                            <h2 class="mb-4 littleTitle5">My Account</h2>
+                            <a href="" class="text-decoration-none text-dark"><p class="link">My Account</p></a>
+                            <a href="" class="text-decoration-none text-dark"><p class="link">Personal Information</p>
+                            </a>
+                            <a href="" class="text-decoration-none text-dark"><p class="link">Addresses</p></a>
+                            <a href="" class="text-decoration-none text-dark"><p class="link">Discount</p></a>
+                            <a href="" class="text-decoration-none text-dark"><p class="link">Orders history</p></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-0">
+                        <h2 class="mb-4 littleTitle5">Photo in Flickr</h2>
+                        <div class="row mb-4">
+                            <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox"
+                               data-gallery="example-gallery" class="col-4">
+                                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid"
+                                     alt="organie lightbox">
+                            </a>
+                            <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox"
+                               data-gallery="example-gallery" class="col-4">
+                                <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid"
+                                     alt="organie lightbox">
+                            </a>
+                            <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox"
+                               data-gallery="example-gallery" class="col-4">
+                                <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid"
+                                     alt="organie lightbox">
+                            </a>
+                        </div>
+                        <div class="row mb-4">
+                            <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox"
+                               data-gallery="example-gallery" class="col-4">
+                                <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid"
+                                     alt="organie lightbox">
+                            </a>
+                            <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox"
+                               data-gallery="example-gallery" class="col-4">
+                                <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid"
+                                     alt="organie lightbox">
+                            </a>
+                            <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox"
+                               data-gallery="example-gallery" class="col-4">
+                                <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid"
+                                     alt="organie lightbox">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="row pb-3">
+            <h4 class="d-none">Footer Copyright</h4>
+            <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+                <div class="d-flex">
+                    <p class="tinyTitle">Copyright &amp;copy 2016 <span class="text-forestgreen">Organiestore</span>-All
+                        Rights Reserved</p>
+                    <div class="ml-auto">
+                        <a href="" class="text-decoration-none text-uppercase text-dark pr-2">Privacy</a>
+                        <a href="" class="text-decoration-none text-uppercase text-dark">Terms and conditions</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+</footer>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<script>$(document).on('click', '[data-toggle="lightbox"]', function (event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});</script>
+</body>
+</html>
